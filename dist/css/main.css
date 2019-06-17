@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: #fff; }
+
+ul {
+  list-style: none; }
+
+.container-fluid {
+  width: 100%; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.d-flex {
+  display: -webkit-flex;
+  display: flex; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.main__wrapper {
+  background: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url("/dist/images/hotels4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px; }
+  .main__wrapper header {
+    padding-top: 3rem; }
+    .main__wrapper header .header-links li a {
+      text-decoration: none;
+      color: #fff;
+      margin-left: 1.7rem; }
+    .main__wrapper header .header-links .register-link, .main__wrapper header .header-links .login-link {
+      border: 1px solid #fff;
+      padding: .7rem 2.5rem;
+      border-radius: 2px; }
+      .main__wrapper header .header-links .register-link:hover, .main__wrapper header .header-links .login-link:hover {
+        background: #FFFFFF;
+        color: #3d3d3d;
+        transition: all ease-out .5s; }
+    .main__wrapper header .menu-toggle {
+      display: none;
+      cursor: pointer; }
+  .main__wrapper .search__form--wrapper {
+    padding: 10rem 0;
+    width: 65%;
+    margin: 0 auto; }
+    .main__wrapper .search__form--wrapper h2 {
+      font-size: 2rem;
+      letter-spacing: .05rem;
+      text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.3);
+      font-weight: 800; }
+    .main__wrapper .search__form--wrapper p {
+      font-size: .9rem;
+      margin-top: 1.5rem; }
+    .main__wrapper .search__form--wrapper .search-form {
+      background: #fff;
+      margin-top: .5rem;
+      border-radius: 4px;
+      align-items: center; }
+      .main__wrapper .search__form--wrapper .search-form .search-icon {
+        margin-left: 1.5rem; }
+        .main__wrapper .search__form--wrapper .search-form .search-icon .fa-search {
+          color: #3d3d3d;
+          font-size: 1.3rem; }
+      .main__wrapper .search__form--wrapper .search-form input[type=text] {
+        width: 100%;
+        margin-left: 1rem;
+        height: 3.5rem;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        outline: none;
+        color: #3d3d3d;
+        font-weight: bold;
+        border-radius: 4px; }
+        .main__wrapper .search__form--wrapper .search-form input[type=text]:focus {
+          box-shadow: none; }
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto; }
+  header {
+    padding: 0 .2rem; }
+  .menu-toggle {
+    display: block !important; }
+  .search__form--wrapper {
+    width: 100% !important; }
+    .search__form--wrapper h2 {
+      font-size: 1.3rem !important;
+      line-height: 1.1;
+      padding-bottom: 3rem; } }
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block !important; }
+    .menu-toggle .fa-bars {
+      font-size: 2rem; }
+  .header__list--items {
+    position: absolute;
+    right: 40% !important;
+    left: 0;
+    top: 0;
+    background: rgba(4, 9, 30, 0.9);
+    height: 500px;
+    display: none; }
+    .header__list--items .header-links {
+      flex-direction: column;
+      line-height: 5;
+      margin-top: 5rem; }
+  .show-nav {
+    right: 0;
+    display: block;
+    position: fixed;
+    transition: all ease-out .5s !important; }
+  .search__form--wrapper {
+    width: 100% !important; }
+  p {
+    color: #fff; } }

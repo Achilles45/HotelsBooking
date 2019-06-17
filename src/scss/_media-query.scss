@@ -1,0 +1,58 @@
+@include mediaSM{
+    .container{
+        width: 90%;
+        margin:0 auto;
+    }
+    header{
+        padding:0 .2rem;
+    }
+    //SEARCH FORM SECTION
+    .menu-toggle{
+        display: block !important;
+    }
+    .search__form--wrapper{
+        width: 100% !important;
+        h2{
+            font-size:1.3rem !important;
+            line-height: 1.1;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+@include mediaMD{
+    //SEARCH FORM SECTION
+    .menu-toggle{
+        display: block !important;
+        .fa-bars{
+            font-size: 2rem;
+        }
+    }
+    .header__list--items{
+        position: absolute;
+        right: 40% !important;
+        left:0;
+        top:0;
+        background:rgba(4,9,30,.9);
+        height: 500px;
+        display: none;
+        .header-links{
+            flex-direction: column;
+            line-height: 5;
+            margin-top:5rem;
+        }
+    }
+    .show-nav{
+        right:0;
+        display: block;
+        position: fixed;
+        transition: all ease-out .5s !important;
+    }
+    .search__form--wrapper{
+        width: 100% !important;
+    }
+  
+    p{
+        color:#fff;
+    }
+}

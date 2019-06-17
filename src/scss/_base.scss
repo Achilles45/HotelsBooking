@@ -1,0 +1,14 @@
+.container-fluid{
+    width:100%;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+.d-flex{
+    display: -webkit-flex;
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
